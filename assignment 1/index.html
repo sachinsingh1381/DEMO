@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E SHOP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo a {
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+
+        }
+
+        .logo a:hover {
+            color: lightgray;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: lightseagreen;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        .search-box {
+            position: relative;
+            width: 220px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 35px 10px 15px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            text-indent: 20px;
+        }
+        .search-box i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: gray;
+        }
+        .button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button{
+            width: auto;
+            padding: 10px 10px;
+            border-radius: 10px;
+            border: 2px solid white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        button:hover {
+            background-color: lightblue;
+            color: grey;
+            transition: 0.3s;
+        }  
+
+        .section {
+            width: 100%;
+            min-height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box {
+            margin: 10px;
+            width: 280px;
+            height: 200px;
+            background-color: lightcoral;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            border-radius: 8px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 113.5px;
+        }
+
+        .footer p {
+            font-size: large;
+            font-style: oblique;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">E SHOP</a>
+        </div>
+        <nav>
+            <a href="#"><i class="fa-solid fa-house"></i> HOME</a>
+            <a href="#"><i class="fa-solid fa-circle-user"></i> ABOUT</a>
+            <a href="#"><i class="fa-solid fa-address-book"></i> CONTACT</a>
+            <a href="#"><i class="fa-brands fa-product-hunt"></i> PRODUCT</a>
+        </nav>
+        <div class="search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="button">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </header>
+    <section class="section">
+        <div class="box">
+            <h1>Product 1</h1>
+        </div>
+        <div class="box">
+            <h1>Product 2</h1>
+        </div>
+        <div class="box">
+            <h1>Product 3</h1>
+        </div>
+        <div class="box">
+            <h1>Product 4</h1>
+        </div>
+        <div class="box">
+            <h1>Product 5</h1>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>@ 20XX copyright <i class="fa-regular fa-copyright"></i></p>
+    </footer>
+</body>
+
+</html>
